@@ -13,6 +13,26 @@
             background-color: #f4f4f4;
         }
 
+        /* 导航栏样式 */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
         header {
             background-color: #333;
             color: white;
@@ -24,13 +44,13 @@
             margin: 0;
         }
 
-      .container {
+     .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
 
-      .post {
+     .post {
             background-color: white;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -38,55 +58,56 @@
             padding: 20px;
         }
 
-      .post h2 {
+     .post h2 {
             margin-top: 0;
             text-align: center;
         }
 
-      .post p {
+     .post p {
             color: #666;
         }
 
-      .read-more {
+     .read-more {
             display: block;
             background-color: #333;
             color: white;
             text-decoration: none;
             padding: 8px 16px;
             border-radius: 3px;
-            margin: 10px auto; /* 水平居中 */
-            width: fit-content; /* 宽度自适应内容 */
+            margin: 10px auto;
+            width: fit-content;
         }
 
-      .read-more:hover {
+     .read-more:hover {
             background-color: #555;
         }
 
-      .comments {
+     .comments {
             margin-top: 20px;
         }
 
-      .comments h3 {
+     .comments h3 {
             margin-bottom: 10px;
             text-align: center;
         }
 
-      .comment {
+     .comment {
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 10px;
             margin-bottom: 10px;
         }
 
-      .comment p {
+     .comment p {
             margin: 0;
         }
 
-      .comment-form {
+     .comment-form {
             margin-top: 20px;
         }
 
-      .comment-form input,.comment-form textarea {
+     .comment-form input,
+     .comment-form textarea {
             display: block;
             width: 100%;
             padding: 10px;
@@ -95,7 +116,7 @@
             border-radius: 5px;
         }
 
-      .comment-form button {
+     .comment-form button {
             background-color: #333;
             color: white;
             padding: 8px 16px;
@@ -104,19 +125,23 @@
             cursor: pointer;
         }
 
-      .comment-form button:hover {
+     .comment-form button:hover {
             background-color: #555;
         }
     </style>
 </head>
 
 <body>
- <!-- 导航栏 -->
- <nav>
-    <a href="https://blog.qiyu666.us.kg">首页</a>
-    <a href="#">全部内容</a>
-    <a href="#">联系方式</a>
-</nav>
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="content.html">全部内容</a>
+        <a href="#">联系方式</a>
+    </nav>
+    <div class="container">
+        <!-- ID:1 -->
+    <h1>欢迎来到我的博客</h1>
+    <h1>以下是我给你推荐的文章。</h1>
     <div class="container">
         <!-- ID:1 -->
         <div class="post">
@@ -124,5 +149,4 @@
             <p>春节，作为中华民族最重要的传统节日，承载着丰富的文化内涵和深厚的情感寄托。在蛇年，各地又有哪些别具一格的过年习俗呢？让我们一起来探寻。</p>
         </div>
 </body>
-
 </html>
